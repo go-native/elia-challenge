@@ -56,10 +56,10 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-between">
       <div className="navbar bg-base-100">
         <div className="flex-1">
-          <a className="btn btn-ghost text-xl">Elia Challenge</a>
+          <a className="btn btn-ghost text-xl text-white">Elia Challenge</a>
         </div>
         <div className="flex-none">
-          <ul className="menu menu-horizontal px-1">
+          <ul className="menu menu-horizontal px-1 text-white">
             <li>
               <button onClick={() => createFigure()}>Add figure</button>
             </li>
