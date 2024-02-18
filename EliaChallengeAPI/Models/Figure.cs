@@ -10,7 +10,6 @@ public class Figure
     public string? Id { get; set; }
 
     [BsonElement("position")]
-
     public Position Position { get; set; }
 
     [BsonElement("customSVG")]
@@ -23,9 +22,8 @@ public class Figure
 public class Position
 {
     [BsonElement("x")]
-
     public int X { get; set; }
-    [BsonElement("y")]
 
+    [BsonElement("y")]
     public int Y { get; set; }
 }
