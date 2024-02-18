@@ -1,0 +1,16 @@
+version: '3.1' # Specifies the version of the Compose file format
+
+services:
+  mongodb:
+    image: mongo:latest
+    container_name: mongodb_local
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: user
+      MONGO_INITDB_ROOT_PASSWORD: pass123
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data_container:/data/db
+
+volumes:
+  mongodb_data_container: # Defines a volume for persisting MongoDB data
