@@ -18,11 +18,11 @@ export const Board = ({ figures, onDrop }: Props) => {
   };
 
   return (
-    <div className="min-h-screen w-full bg-neutral relative">
+    <div className="w-full bg-neutral relative flex-1">
       {figures.map((figure) => (
         <Draggable
           key={figure.id}
-          bounds={{ top: 0, left: 0 }}
+          bounds={'parent'}
           onStop={(e, data) => handleDragStop(e, data, figure)}
 
           defaultPosition={{ x: figure.position.x, y: figure.position.y }}
