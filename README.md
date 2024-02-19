@@ -21,6 +21,8 @@
 
     cd EliaChallengeAPI/
 
+    dotnet dev-certs https --trust
+    
     dotnet restore
     dotnet run --launch-profile https
 
